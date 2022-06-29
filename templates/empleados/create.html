@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>Cargar Empleados</title>
+  
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand"></a>
+            
+            <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="my-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/"> Planilla Principal </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Cargar Empleados<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+  <br><br><br>
+
+  <div>
+    <form method="post" action="/store" enctype="multipart/form-data" class="border-top">
+        <br>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" name="txtNombre" id="txtNombre">
+        <br>
+        <label for="lname">Correo electrónico:</label><br>
+        <input type="text" name="txtCorreo" id="txtCorreo">
+        <br>
+        <br>
+        <label for="lname">Foto:</label><br>
+        <input type="file" name="txtFoto" id="txtFoto" class="button">
+        <br>
+        <br>
+        <input type="submit" value="Agregar">
+     
+ 
+</body>
+</html>
