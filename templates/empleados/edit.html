@@ -1,0 +1,42 @@
+{% include 'header.html'%}
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+
+<div class="container" style="margin-top: 150px; margin-bottom: 500px;">
+    <form method="post" action="/update" enctype="multipart/form-data" class="border-top">
+        <br>
+        {% for empleado in empleados %}
+        <br>
+        <input type="text" value="{{empleado[0]}}" name="txtId" id="txtId">
+        <br>
+        <label for="fname">Nombre:</label><br>
+        <input type="text" value="{{empleado[1]}}" name="txtNombre" id="txtNombre">
+        <br>
+        <label for="lname">Correo electrónico:</label><br>
+        <input type="text" value="{{empleado[2]}}" name="txtCorreo" id="txtCorreo">
+        <br>
+        <br>
+        <label for="lname">Foto:</label><br>
+        <input type="file" value="{{empleado[3]}}"  name="txtFoto" id="txtFoto" class="button">
+        <br>
+        <br>
+        <input type="submit" value="Editar">
+        {% endfor %}
+    </form>
+</div>
+  
+   
+  
+      
+
+
+
+
+
+
+
+
+
+  {% include 'footer.html'%}
