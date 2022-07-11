@@ -19,10 +19,11 @@
         <br>
         <br>
         <label for="lname">Foto:</label><br>
+        <img class="img-thumbnail" width="100px" src="{{ url_for('uploads', nombreFoto=empleado[3]) }}" alt="">
         <input type="file" value="{{empleado[3]}}"  name="txtFoto" id="txtFoto" class="button">
         <br>
         <br>
-        <input type="submit" value="Editar">
+        <input type="submit" value="Edit">
         {% endfor %}
     </form>
 </div>

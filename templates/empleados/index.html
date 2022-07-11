@@ -37,13 +37,18 @@
             {% for empleado in empleados %}
               <tr>
                 <td>{{empleado[0]}}</td>
-                <td>{{empleado[3]}}</td>
+                <td>
+                    <img class="img-thumbnail" width="100px" src="/uploads/{{empleado[3]}}" alt="">
+                    
+
+
+                </td>
                 <td>{{empleado[1]}}</td>
                 <td>{{empleado[2]}}</td>
                 <td>  <a href="/edit/{{empleado[0]}}">
                     Editar</a> 
                     | 
-                    <a href="/destroy/{{empleado[0]}}">
+                    <a onClick="return confirm('¿Desea eliminarlo?')" href="/destroy/{{empleado[0]}}">
                         Eliminar
                     </a></td>
               
